@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia 1 - Página principal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cosmic': {
+                            '50': '#fbf8fa',
+                            '100': '#f7f0f6',
+                            '200': '#eee0ed',
+                            '300': '#e0c7dc',
+                            '400': '#cda5c7',
+                            '500': '#b580ad',
+                            '600': '#98618f',
+                            '700': '#7d4e74',
+                            '800': '#6e4666',
+                            '900': '#563950',
+                            '950': '#351d30',
+                        },
+
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <main class="bg-white py-8 bg-gradient-to-b from-white to-cosmic-400">
+        <div class="flex flex-col items-center justify-center space-y-8">
+            <h1 class="md:text-5xl text-3xl text-cosmic-950 text-center">Guía 1 - Desarrollo Web II</h1>
+            <h2 class="md:text-2xl text-xl text-cosmic-900 text-center">Fernando Fuentes | 20235854</h2>
+        </div>
+
+
+        <!-- Card Container -->
+        <div class="py-12 lg:px-48 md:px-16 px-4 flex flex-col space-y-12">
+            <!-- Generate cards for each exercise -->
+            <div class="bg-cosmic-200 flex shadow-lg rounded-xl transition-transform hover:-translate-y-2 duration-300">
+                <a href="./pricing-card/pricing.html" class="block flex flex-row">
+                    <!-- Left-side detail for the card -->
+                    <div class="bg-cosmic-700 md:w-8 max-w-8 min-w-8 w-[64px] h-full rounded-l-lg"></div>
+                    <div class="md:p-12 p-8">
+                        <h3 class="md:text-3xl text-2xl font-semibold md:mb-8 mb-4">Tarjeta de pricing</h3>
+                        <p class="md:text-xl text-lg leading-8">Ejemplo de tarjeta para una página de precios.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="bg-cosmic-200 flex shadow-lg rounded-xl transition-transform hover:-translate-y-2 duration-300">
+                <a href="./producto/producto.html" class="block flex flex-row">
+                    <!-- Left-side detail for the card -->
+                    <div class="bg-cosmic-700 md:w-8 max-w-8 min-w-8 w-[64px] h-full rounded-l-lg"></div>
+                    <div class="md:p-12 p-8">
+                        <h3 class="md:text-3xl text-2xl font-semibold md:mb-8 mb-4">Producto</h3>
+                        <p class="md:text-xl text-lg leading-8">Ejemplo de componente para un e-commerce con la información de un
+                            producto.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="bg-cosmic-200 flex shadow-lg rounded-xl transition-transform hover:-translate-y-2 duration-300">
+                <a href="./galeria/galeria.html" class="block flex flex-row">
+                    <!-- Left-side detail for the card -->
+                    <div class="bg-cosmic-700 md:w-8 max-w-8 min-w-8 w-[64px] h-full rounded-l-lg"></div>
+                    <div class="md:p-12 p-8">
+                        <h3 class="md:text-3xl text-2xl font-semibold md:mb-8 mb-4">Galería</h3>
+                        <p class="md:text-xl text-lg leading-8">Componente de galería de imágenes con CSS Grid para la ubicación de
+                            los elementos.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="bg-cosmic-200 flex shadow-lg rounded-xl transition-transform hover:-translate-y-2 duration-300">
+                <a href="./login/login.html" class="block flex flex-row">
+                    <!-- Left-side detail for the card -->
+                    <div class="bg-cosmic-700 md:w-8 max-w-8 min-w-8 w-[64px] h-full rounded-l-lg"></div>
+                    <div class="md:p-12 p-8">
+                        <h3 class="md:text-3xl text-2xl font-semibold md:mb-8 mb-4">Formulario de inicio de sesión</h3>
+                        <p class="md:text-xl text-lg leading-8">Ejemplo de formulario para un inicio de sesión con diferentes
+                            métodos.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="bg-cosmic-200 flex shadow-lg rounded-xl transition-transform hover:-translate-y-2 duration-300">
+                <a href="./clipboard/index.html" class="block flex flex-row">
+                    <!-- Left-side detail for the card -->
+                    <div class="bg-cosmic-700 md:w-8 max-w-8 min-w-8 w-[64px] h-full rounded-l-lg"></div>
+                    <div class="md:p-12 p-8">
+                        <h3 class="md:text-3xl text-2xl font-semibold md:mb-8 mb-4">Clipboard landing page</h3>
+                        <p class="md:text-xl text-lg leading-8">Página de inicio de una empresa ficticia. Contiene 5 secciones con
+                            diferentes layouts.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="bg-cosmic-200 flex shadow-lg rounded-xl transition-transform hover:-translate-y-2 duration-300">
+                <a href="./bloons_td_6/index.html" class="block flex flex-row">
+                    <!-- Left-side detail for the card -->
+                    <div class="bg-cosmic-700 md:w-8 max-w-8 min-w-8 w-[64px] h-full rounded-l-lg"></div>
+                    <div class="md:p-12 p-8">
+                        <h3 class="md:text-3xl text-2xl font-semibold md:mb-8 mb-4">Bloons TD 6 (ejercicio)</h3>
+                        <p class="md:text-xl text-lg leading-8">Página de inicio sobre el videojuego Bloons TD 6. Ejercicio final
+                            de la guía.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
